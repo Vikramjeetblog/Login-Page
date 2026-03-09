@@ -1,0 +1,7 @@
+@import "tailwindcss";
+body{
+font-family: 'Rubik', sans-serif;
+}
+.input{
+  @apply w-full border border-gray-300 rounded-lg p-3 mb-3;
+}
