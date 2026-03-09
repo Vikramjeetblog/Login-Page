@@ -28,19 +28,25 @@ function App() {
 
         <Route path="/" element={<Welcome />} />
 
-        <Route 
-          path="/signup" 
-          element={<Signup setUser={setUser} />} 
+        <Route
+          path="/signup"
+          element={<Signup setUser={setUser} />}
         />
 
-        <Route 
-          path="/login" 
-          element={<Login setUser={setUser} />} 
+        <Route
+          path="/login"
+          element={<Login setUser={setUser} />}
         />
 
-        <Route 
-          path="/account" 
-          element={<Account user={user} setUser={setUser} />} 
+        <Route
+          path="/account"
+          element={
+            user ? (
+              <Account user={user} setUser={setUser} />
+            ) : (
+              <Login setUser={setUser} />
+            )
+          }
         />
 
       </Routes>
