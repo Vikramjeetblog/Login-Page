@@ -3,7 +3,7 @@ export default function MobileContainer({ children }) {
     <div className="flex justify-center min-h-screen bg-[#F7F8F9] pt-10 pb-10 overflow-hidden">
 
       {/* Mobile Screen */}
-      <div className="w-[375px] h-[680px] border border-gray-300 px-[20px] py-[40px] bg-[#F7F8F9]">
+      <div className="w-[375px] h-[590px] border border-gray-300 px-[20px] py-[40px] bg-[#F7F8F9]">
 
         {children}
 

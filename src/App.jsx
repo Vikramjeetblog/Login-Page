@@ -9,6 +9,7 @@ import Account from "./pages/Account"
 function App() {
 
   const [user, setUser] = useState(null)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
 
@@ -18,7 +19,13 @@ function App() {
       setUser(JSON.parse(storedUser))
     }
 
+    setLoading(false)
+
   }, [])
+
+  if (loading) {
+    return <div>Loading...</div>
+  }
 
   return (
 

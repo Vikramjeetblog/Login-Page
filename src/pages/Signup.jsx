@@ -61,7 +61,7 @@ export default function Signup() {
     title: "Account Created!"
   })
 
-  navigate("/account")
+  navigate("/login")
 
 }, 1200)
 }
@@ -70,7 +70,7 @@ export default function Signup() {
     <MobileContainer>
 
       {/* Title */}
-      <h1 className="text-[26px] font-medium text-[#1D2226] mb-8">
+      <h1 className="text-[26px] font-medium text-[#1D2226] mb-4">
         Create your <br /> PopX account
       </h1>
 
@@ -231,7 +231,7 @@ export default function Signup() {
       <button
         onClick={handleSubmit}
         disabled={loading}
-        className="w-full h-[46px] text-white rounded-md text-[16px] font-medium 
+        className="w-full h-[40px] text-white rounded-md text-[16px] font-medium 
         bg-gradient-to-r from-[#6C25FF] to-[#7C3AED] hover:opacity-90 transition"
       >
         {loading ? "Submitting..." : "Create Account"}
