@@ -2,7 +2,7 @@ import { useState } from "react"
 import Swal from "sweetalert2"
 import MobileContainer from "../components/MobileContainer"
 import { useNavigate } from "react-router-dom"
-import { validateSignup } from "../utils/validation"
+import { validateSignup } from "../utils/Validation"
 
 export default function Signup() {
 
